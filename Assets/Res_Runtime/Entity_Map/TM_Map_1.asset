@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: TM_Map_1
   m_EditorClassIdentifier: 
   stageID: 1
+  terrainTMs:
+  - {fileID: 11400000, guid: f702d7b744e2efb45ac97cb2463dc547, type: 2}
   propSpawners:
   - pos: {x: 34.06, y: 6.8, z: 56.2}
     rot: {x: -0, y: 0, z: 0}

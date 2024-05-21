@@ -4,7 +4,7 @@ using UnityEditor;
 namespace LevelEditorTutorial.Editor {
 
     // 每一个EM对应一个TM
-    public class MapEditorModel : MonoBehaviour {
+    public class MapEM : MonoBehaviour {
 
         [SerializeField] MapTemplateModel tm;
 

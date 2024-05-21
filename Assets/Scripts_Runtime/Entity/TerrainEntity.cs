@@ -1,16 +1,15 @@
-using System;
 using UnityEngine;
 
 namespace LevelEditorTutorial {
 
-    public class PropEntity : MonoBehaviour {
+    public class TerrainEntity : MonoBehaviour {
 
         public int id;
 
-        GameObject mod;
+        Terrain terrain;
 
         public void Ctor(GameObject mod) {
-            this.mod = mod;
+            this.terrain = mod.GetComponent<Terrain>();
         }
 
     }

@@ -7,6 +7,9 @@ namespace LevelEditorTutorial {
 
         public int stageID; // 关卡ID
 
+        // Terrain
+        public TerrainTM[] terrainTMs;
+
         // PropSpawner
         public PropSpawnerTM[] propSpawners;
 
