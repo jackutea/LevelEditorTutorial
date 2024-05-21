@@ -1,0 +1,22 @@
+==== 流程 ====
+1. 生成
+- 角色
+- 石头
+- 地形
+
+2. 编译
+- A方案: 在所有Editor的代码中, 增加 #if UNITY_EDITOR #endif
+- B方案: 使用asmdef, 在define增加 UNITY_EDITOR
+
+==== 概念 ====
+编辑时 Editor
+运行时 Runtime
+测试时 Tests
+演示时 Sample
+
+==== Feature ====
+```
+// 就可以右键点击脚本运行
+[ContextMenu("Save")]
+void Function() {}
+```
