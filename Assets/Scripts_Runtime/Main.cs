@@ -23,18 +23,8 @@ namespace LevelEditorTutorial {
             ctx.assetManager.LoadAll();
 
             // ==== Enter ====
-            // 1. 加载 Role / Prop / Map(Terrain)
-            bool has = ctx.assetManager.Prop_TryGet(100, out var propTM);
-            if (!has) {
-                Debug.LogError("Prop 100 not found");
-                return;
-            }
-
-            PropEntity prop = new GameObject("Prop").AddComponent<PropEntity>();
-            var mod = GameObject.Instantiate(propTM.modPrefab, prop.transform);
-            prop.Ctor(mod);
-
-            prop.transform.position = new Vector3();
+            // 进入某一关
+            GameDomain.EnterStage(ctx, 1);
 
             Debug.Log("Enter Game()");
         }

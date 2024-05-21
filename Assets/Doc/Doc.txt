@@ -1,5 +1,5 @@
 ==== 流程 ====
-1. 生成
+1. 生成, 把EditoModel(EM)烘焙到TemplateModel(TM)
 - 角色
 - 石头
 - 地形

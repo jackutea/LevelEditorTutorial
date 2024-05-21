@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: TM_Map_1
   m_EditorClassIdentifier: 
   stageID: 1
-  propSpawners: []
+  propSpawners:
+  - pos: {x: 34.06, y: 6.8, z: 56.2}
+    rot: {x: -0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    propTypeID: 100
+  - pos: {x: 37.29, y: 4.86, z: 56.2}
+    rot: {x: -0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    propTypeID: 100

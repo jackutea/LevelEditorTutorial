@@ -1,7 +1,9 @@
 {
     "name": "LevelEditorTutorial.Editor",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:fa3486fdbdf1ad249a90ca77fbb744b3"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
