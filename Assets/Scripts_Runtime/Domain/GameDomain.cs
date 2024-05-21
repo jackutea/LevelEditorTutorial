@@ -28,7 +28,7 @@ namespace LevelEditorTutorial {
             if (mapTM.propSpawners != null) {
                 for (int i = 0; i < mapTM.propSpawners.Length; i += 1) {
                     var propSpawner = mapTM.propSpawners[i];
-                    SpawnProp(ctx, propSpawner.propTypeID, propSpawner.pos, propSpawner.rot, propSpawner.scale);
+                    PropDomain.Spawn(ctx, propSpawner.propTypeID, propSpawner.pos, propSpawner.rot, propSpawner.scale);
                 }
             }
 
@@ -49,29 +49,6 @@ namespace LevelEditorTutorial {
             ctx.terrainRepository.Add(terrain);
 
             return terrain;
-        }
-
-        static PropEntity SpawnProp(Context ctx, int typeID, Vector3 pos, Vector3 rot, Vector3 scale) {
-            bool has = ctx.assetManager.Prop_TryGet(typeID, out var propTM);
-            if (!has) {
-                Debug.LogError($"PropTemplateModel not found for typeID: {typeID}");
-                return null;
-            }
-
-            PropEntity prop = new GameObject("Prop").AddComponent<PropEntity>();
-            var mod = GameObject.Instantiate(propTM.modPrefab, prop.transform);
-            prop.Ctor(mod);
-
-            prop.id = ctx.idService.propIDRecord++;
-
-            prop.transform.position = pos;
-            prop.transform.eulerAngles = rot;
-            prop.transform.localScale = scale;
-
-            // 存到仓库
-            ctx.propRepository.Add(prop);
-
-            return prop;
         }
 
     }

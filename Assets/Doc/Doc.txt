@@ -3,6 +3,8 @@
 - 角色
 - 石头
 - 地形
+编辑关卡时: EM -> TM
+运行游戏时: TM -> Entity
 
 2. 编译
 - A方案: 在所有Editor的代码中, 增加 #if UNITY_EDITOR #endif

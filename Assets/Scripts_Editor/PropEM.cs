@@ -10,6 +10,12 @@ namespace LevelEditorTutorial.Editor {
 
         GameObject mod;
 
+        void OnEnable() {
+            for (int i = transform.childCount - 1; i >= 0; i--) {
+                DestroyImmediate(transform.GetChild(i).gameObject);
+            }
+        }
+
         void Update() {
             if (mod == null) {
                 mod = Instantiate(tm.modPrefab, transform);
