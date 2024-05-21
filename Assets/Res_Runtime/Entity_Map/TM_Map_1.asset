@@ -16,11 +16,11 @@ MonoBehaviour:
   terrainTMs:
   - {fileID: 11400000, guid: f702d7b744e2efb45ac97cb2463dc547, type: 2}
   propSpawners:
-  - pos: {x: 39.54, y: 5.19, z: 40.9}
+  - pos: {x: 24.5, y: 5.19, z: 40.9}
     rot: {x: -0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     propTypeID: 100
-  - pos: {x: 37.29, y: 4.86, z: 56.2}
+  - pos: {x: 22.25, y: 4.86, z: 56.2}
     rot: {x: -0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
     propTypeID: 100

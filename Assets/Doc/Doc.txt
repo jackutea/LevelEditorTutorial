@@ -15,6 +15,9 @@
 - 重新生成.csproj. 在Edit/Preferences/ExternalTool/Regenerate Project Files
 - 重载VScode
 
+4. 按需加载的本质:
+- 按需加载地形、Prop、Role
+
 ==== 概念 ====
 编辑时 Editor
 运行时 Runtime
