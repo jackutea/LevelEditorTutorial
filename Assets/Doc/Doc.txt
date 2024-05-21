@@ -8,6 +8,11 @@
 - A方案: 在所有Editor的代码中, 增加 #if UNITY_EDITOR #endif
 - B方案: 使用asmdef, 在define增加 UNITY_EDITOR
 
+3. VSCode 编辑器报存在同类型
+- 删除所有.csproj
+- 重新生成.csproj. 在Edit/Preferences/ExternalTool/Regenerate Project Files
+- 重载VScode
+
 ==== 概念 ====
 编辑时 Editor
 运行时 Runtime

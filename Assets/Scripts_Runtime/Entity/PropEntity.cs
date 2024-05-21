@@ -5,8 +5,10 @@ namespace LevelEditorTutorial {
 
     public class PropEntity : MonoBehaviour {
 
-        public void Ctor() {
-            
+        GameObject mod;
+
+        public void Ctor(GameObject mod) {
+            this.mod = mod;
         }
 
     }
